@@ -1,146 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Le Catering</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/jpg" href="/images/img1.jpg">
+    <link rel="icon" type="image/jpg" href="images/img1.jpg">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        /* Navbar styles */
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ff8800;
+        }
+        /* Header styles */
+        #home {
+            background-image: url('images/home-bg.jpg');
+            background-size: cover;
+            text-align: center;
+            padding: 100px 0;
+            color: #fff;
+        }
+        #home-content {
+            font-size: 36px;
+            margin: 20px 0;
+        }
+        /* About section styles */
+        #about {
+            background-color: #fff;
+            padding: 40px;
+        }
+        #about img {
+            max-width: 100%;
+        }
+        /* Menu section styles */
+        #menu {
+            background-color: #f9f9f9;
+            padding: 40px;
+        }
+        .menu-headings {
+            font-size: 24px;
+        }
+        /* Contact section styles */
+        #contact {
+            background-color: #333;
+            color: #fff;
+            padding: 40px;
+        }
+        .contact-content {
+            font-size: 18px;
+        }
+        /* Footer styles */
+        #footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-<!-------Navbar-------------------------------------------------------------------------------------------------------------------------------->
+    <!-- Navbar -->
     <nav>
         <ul>
-            <li><a href="#home" id="left">Gourmet au Catering</a></li>
-            <li><a href="#about" id="right">About</a></li>
-            <li><a href="#menu" id="right1">Menu</a></li>
-            <li><a href="#contact" id="right2">Contact</a></li>
+            <li><a href="#home">Gourmet au Catering</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-<!-------Home section---------------------------------------------------------------------------------------------------------------------------------->
+
+    <!-- Home section -->
     <div id="home">
+        <p id="home-content">Le Catering</p>
     </div>
-    <p id="home-content">Le Catering</p>
-    <hr>
-<!-----About section---------------------------------------------------------------------------------------------------------------------------------------->
-    <div id="about">
-        <!--image in about section-->
-        <section id="about-section-image">
-            <img src="images/img1.jpg">
-        </section>
-        <!---content in about section-->
-        <section id="about-section">
-            <p id="about-section-heading">About Catering</p>
-            <h5 id="about-section-des">Tradition since 1889</h5>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde libero sequi eius ipsam? Explicabo velit,
+
+    <!-- About section -->
+    <section id="about">
+        <img src="images/img1.jpg" alt="Catering Image">
+        <p id="about-section-heading">About Catering</p>
+        <h5 id="about-section-des">Tradition since 1889</h5>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde libero sequi eius ipsam? Explicabo velit,
             facere ullam excepturi perferendis commodi consequuntur, officia alias fuga beatae, eligendi voluptas
             quisquam molestiae voluptatum cum suscipit earum dolorem aliquid neque? Dolores exercitationem assumenda
             quia.
-            <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut qui ab a illum eaque. Excepturi, totam. Odit
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut qui ab a illum eaque. Excepturi, totam. Odit
             aperiam magni, culpa veniam ullam ea totam suscipit minima! Quam odio nesciunt ipsum. Maxime ipsa soluta
             fugiat.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione iure eaque repellendus cumque quasi
-            dignissimos, atque necessitatibus, qui molestiae aliquid adipisci a cum.<br>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas at blanditiis dolore saepelorem10
-
-        </section>
-    </div>
-    <hr>
-<!----------Our menu section------------------------------------------------------------------------------------------------------------------------------->
-    <div id="menu">
-        <!---menu-content-->
-        <section id="menu-content">
-            <div class="menu-items">
-                <p id="menu-main-heading">Our Menu<p>
-            </div>
-            <div class="menu-items">
-                <h3 class="menu-headings">
-                    Bread Basket
-                </h3>
-                <p class="menu-des">
-                    Assortment of fresh baked fruit breads and muffins 5.50
-                </p>
-            </div>
-            <div class="menu-items">
-                <h3 class="menu-headings">
-                    Honey Almond Granola with Fruits
-                </h3>
-                <p class="menu-des">
-                    Natural cereal of honey toasted oats, raisins, almonds and dates 7.00
-                </p>
-            </div>
-            <div class="menu-items">
-                <h3 class="menu-headings">
-                    Belgian Waffle
-
-                </h3>
-                <p class="menu-des">
-                    Vanilla flavored batter with malted flour 7.50
-                </p>
-            </div>
-            <div class="menu-items">
-                <h3 class="menu-headings">
-                    Scrambled eggs
-                </h3>
-                <p class="menu-des">
-                    Scrambled eggs, roasted red pepper and garlic, with green onions 7.50
-                </p>
-            </div>
-            <div class="menu-items">
-                <h3 class="menu-headings">
-                    Blueberry Pancakes
-                </h3>
-                <p class="menu-des">
-                    With syrup, butter and lots of berries 8.50
-                </p>
-            </div>
-            <div class="menu-items">
-                <h3 class="menu-headings">
-                    Sausage Meatballs
-                </h3>
-                <p class="menu-des">
-                    Spicy sausage with herbs and glazed honey. 7.00
-                </p>
-            </div>
-<!----section-image-->
-        </section>
-        <section id="menu-img">
-            <img src="images/img2.jpg">
-        </section>
-    </div>
-    <hr>
-<!------Contact section---------------------------------------------------------------------------------------------------------------------------------->
-    <div id="contact">
-        <p id="contact-main-heading">
-            Contact
+        </p>
         <p>
-        <p class="contact-content">We offer full-service catering for any event, large or small. We understand your
-            needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not
-            hesitate to contact us.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione iure eaque repellendus cumque quasi
+            dignissimos, atque necessitatibus, qui molestiae aliquid adipisci a cum.
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas at blanditiis dolore saepelorem10.
+        </p>
+    </section>
 
-        </p>
-        <h2 id="contact-sub-heading">
-            Catering Service, 42nd Living St, 43043 New York, NY
-        </h2>
+    <!-- Menu section -->
+    <section id="menu">
+        <div class="menu-items">
+            <p id="menu-main-heading">Our Menu</p>
+        </div>
+        <div class="menu-items">
+            <h3 class="menu-headings">Bread Basket</h3>
+            <p class="menu-des">Assortment of fresh baked fruit breads and muffins 5.50</p>
+        </div>
+        <!-- Add similar sections for other menu items -->
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact">
+        <p id="contact-main-heading">Contact</p>
         <p class="contact-content">
-            You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message
-            here:
+            We offer full-service catering for any event, large or small. We understand your needs, and we will cater
+            the food to satisfy the biggest criteria of them all, both look and taste. Do not hesitate to contact us.
         </p>
-        <!----form------>
+        <h2 id="contact-sub-heading">Catering Service, 42nd Living St, 43043 New York, NY</h2>
+        <p class="contact-content">
+            You can also contact us by phone at 00553123-2323 or email catering@catering.com, or you can send us a message here:
+        </p>
         <form action="/" method="post">
-            <input type="text" name="name" placeholder="Name" required><br>
-            <input type="number" name="people" placeholder="How many people" ><br>
-            <input type="date" name="date" value="30-12-2020 20:00" ><br>
-            <input type="text" name="message" placeholder="Message/Special requirements"><br>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Name" required><br>
+
+            <label for="people">How many people</label>
+            <input type="number" name="people" id="people" placeholder="How many people"><br>
+
+            <label for="date">Date and Time</label>
+            <input type="datetime-local" name="date" id="date" value="2023-12-30T20:00"><br>
+
+            <label for="message">Message/Special requirements</label>
+            <input type="text" name="message" id="message" placeholder="Message/Special requirements"><br>
+
             <input type="submit" name="button" value="SEND MESSAGE"><br>
         </form>
-    </div>
-<!-------Footer-------------------------------------------------------------------------------------------------------------------------------->
-<div id="footer">
-    <span id="footer-content">Powered by @jugesh-raghav...</span>
-</div>
-</body>
+    </section>
 
+    <!-- Footer -->
+    <div id="footer">
+        <span id="footer-content">Powered by @jugesh-raghav...</span>
+    </div>
+</body>
 </html>
+
+        
